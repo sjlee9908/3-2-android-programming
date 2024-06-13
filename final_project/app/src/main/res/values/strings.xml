@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">final_project</string>
+
+    <!-- recycler view -->
+    <string name="user_add_button_text">Add</string>
+    <string name="user_added_success">bussiness card added!</string>
+    <string name="user_added_error">Error to add bussiness card!</string>
+    <string name="user_list_title">Business card</string>
+
+    <!-- business card edit -->
+    <string name="user_title">bussiness card edit</string>
+    <string name="user_title_register">bussiness card List</string>
+    <string name="user_name_hint">name</string>
+    <string name="user_email_hint">email</string>
+    <string name="user_company_hint">company</string>
+    <string name="user_position_hint">position</string>
+    <string name="user_phoneNumber_hint">phoneNumber</string>
+
+    <string name="user_update_button_text">Edit</string>
+    <string name="user_updated_success">Bussiness card edited!</string>
+    <string name="user_updated_error">Error to edit bussiness card!</string>
+
+    <string name="user_delete_button_text">Delete</string>
+    <string name="user_deleted_success">bussiness card deleted!</string>
+    <string name="user_deleted_error">Error to delete bussiness card!</string>
+
+
+
+
+</resources>

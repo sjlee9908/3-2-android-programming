@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/userListFragment">
+
+
+    <!-- recycler view -->
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.final_project.ui.businesscardlist.BusinessCardListFragment"
+        android:label="@string/user_list_title"
+        tools:layout="@layout/businesscard_list_fragment" >
+        <action
+            android:id="@+id/action_userListFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+
+    <!-- business card edit -->
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.final_project.ui.businesscard.BusinessCardFragment"
+        android:label="@string/user_title"
+        tools:layout="@layout/businesscard_fragment" >
+        <argument
+            android:name="user"
+            app:argType="com.example.final_project.data.db.entity.BusinessCardEntity"
+            android:defaultValue="@null"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.businesscard.BusinessCardFragment">
+
+    <!-- Name Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name_hint"
+            android:inputType="textCapSentences" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@id/input_layout_name"
+        app:layout_constraintStart_toStartOf="@id/input_layout_name"
+        app:layout_constraintTop_toTopOf="@id/input_layout_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_email_hint"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Company Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_company"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/input_layout_email"
+        app:layout_constraintStart_toStartOf="@+id/input_layout_email"
+        app:layout_constraintTop_toTopOf="@+id/input_layout_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_company_hint"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Position Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/input_layout_company"
+        app:layout_constraintStart_toStartOf="@+id/input_layout_company"
+        app:layout_constraintTop_toTopOf="@+id/input_layout_company">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_position_hint"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- PhoneNumber Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_phoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="@+id/input_layout_position"
+        app:layout_constraintStart_toStartOf="@+id/input_layout_position"
+        app:layout_constraintTop_toTopOf="@+id/input_layout_position">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_phoneNumber_hint"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!-- Add Button Input -->
+    <Button
+        android:id="@+id/btn_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/user_add_button_text"
+        app:layout_constraintEnd_toEndOf="@+id/input_layout_phoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/input_layout_phoneNumber"
+        app:layout_constraintTop_toTopOf="@+id/input_layout_phoneNumber" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:text="@string/user_delete_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

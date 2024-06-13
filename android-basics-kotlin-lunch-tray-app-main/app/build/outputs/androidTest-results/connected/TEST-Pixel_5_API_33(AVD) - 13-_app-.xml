@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.lunchtray.NavigationTests" tests="1" failures="0" errors="0" skipped="0" time="2.136" timestamp="2023-05-18T16:05:46" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_5_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="navigate_to_accompaniment_menu_from_side_menu" classname="com.example.lunchtray.NavigationTests" time="1.366" />
+</testsuite>
